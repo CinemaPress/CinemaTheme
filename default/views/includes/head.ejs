@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<% /* Название страницы */ %>
+<title><%= page.title %></title>
+
+<% /* Описание страницы */ %>
+<meta name="description" content="<%= page.description %>">
+
+<% /* Стандартный набор стилей */ %>
+<link rel="stylesheet" href="/themes/<%- page.theme %>/public/css/all.min.css?v=<%- page.ver %>">
+
+<% /* Вывод системных скриптов */ %>
+<%- page.codes.head %>

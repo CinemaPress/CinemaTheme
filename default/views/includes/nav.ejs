@@ -1,0 +1,39 @@
+<% /* Ссылки на страницы со всеми категориями */ %>
+<a href="/<%- page.urls.year %>"><%- page.l.allYears %></a>
+<a href="/<%- page.urls.genre %>"><%- page.l.allGenres %></a>
+<a href="/<%- page.urls.country %>"><%- page.l.allCountries %></a>
+<a href="/<%- page.urls.actor %>"><%- page.l.allActors %></a>
+<a href="/<%- page.urls.director %>"><%- page.l.allDirectors %></a>
+
+<% /* Годы (список в настройках отображения) */ %>
+<% page.urls.years.forEach(function(year) { %>
+    <a href="<%- year.url %>"><%- year.title %></a>
+<% }); %>
+
+<% /* Жанры (список в настройках отображения) */ %>
+<% page.urls.genres.forEach(function(genre) { %>
+    <a href="<%- genre.url %>"><%- genre.title %></a>
+<% }); %>
+
+<% /* Страны (список в настройках отображения) */ %>
+<% page.urls.countries.forEach(function(country) { %>
+    <a href="<%- country.url %>"><%- country.title %></a>
+<% }); %>
+
+<% /* Ссылки на категорию типа */ %>
+<a href="/<%- page.urls.type %>/<%- page.urls.types.movie %>"><%- page.l.movies %></a>
+<a href="/<%- page.urls.type %>/<%- page.urls.types.mult %>"><%- page.l.cartoons %></a>
+<a href="/<%- page.urls.type %>/<%- page.urls.types.serial %>"><%- page.l.series %></a>
+<a href="/<%- page.urls.type %>/<%- page.urls.types.multserial %>"><%- page.l.animated %></a>
+<a href="/<%- page.urls.type %>/<%- page.urls.types.anime %>"><%- page.l.anime %></a>
+<a href="/<%- page.urls.type %>/<%- page.urls.types.tv %>"><%- page.l.tv %></a>
+
+<% /* Кнопка случайного фильма в меню */ %>
+<span class="randomMovieMenu" style="display:none">
+    <a href="/?random" class="cinemapress-random-menu"><%- page.l.lucky %></a>
+</span>
+
+<% /* Кнопка продолжения просмотра */ %>
+<span class="continueViewingBlock" style="display:none">
+    <a href="javascript:void(0)" id="continueViewing"><%- page.l.continue %>?</a>
+</span>

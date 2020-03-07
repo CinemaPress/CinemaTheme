@@ -1,0 +1,89 @@
+<% /* Слайдер с фильмами */ %>
+<% if (typeof slider === 'object' && slider.length) { %>
+    <% slider.forEach(function (movie) { %>
+        <a href="<%- movie.url %>"><%= movie.title %></a>
+    <% }); %>
+<% } %>
+
+<% /* Топ фильмы в каждой категории */ %>
+<% if (typeof top === 'object' && top.length) { %>
+    <%- page.l.top %>
+    <% top.forEach(function (movie) { %>
+        <a href="<%- movie.url %>"><%= movie.title %></a>
+    <% }); %>
+<% } %>
+
+<% /* Ближайшие премьеры фильмов */ %>
+<% if (typeof soon === 'object' && soon.length) { %>
+    <%- page.l.soon %>
+    <% soon.forEach(function (movie) { %>
+        <a href="<%- movie.url %>"><%= movie.title %></a>
+    <% }); %>
+<% } %>
+
+<% /* Блок с новостями */ %>
+<% if (typeof news === 'object' && news.length) { %>
+    <% news.forEach(function (content) { %>
+        <div style="float:left;width:100%;">
+            <div style="margin:10px 0;padding:0">
+                <a href="<%- content.url %>" class="cinemapress-news" style="background-image:url('<%- content.image %>');">
+                    <div class="cinemapress-news-title"><%= content.title %></div>
+                </a>
+            </div>
+        </div>
+    <% }); %>
+<% } %>
+
+<% /* Блок с последними комментариями пользователей */ %>
+<% if (typeof recent === 'object' && recent.length) { %>
+    <% recent.forEach(function (comment) { %>
+        <div>
+            <div class="cinemapress-comment">
+                <div class="cinemapress-comment-head">
+                    <div class="cinemapress-comment-head-avatar">
+                        <img src="<%- comment.avatar %>" alt="<%= comment.user %>">
+                    </div>
+                    <div class="cinemapress-comment-head-meta">
+                        <div class="cinemapress-comment-head-meta-title">
+                            <a href="<%- comment.url %>" title="<%= comment.title %>"><%= comment.title %></a>
+                        </div>
+                        <div class="cinemapress-comment-user" data-comment-id="<%- comment.id %>">
+                            <div class="cinemapress-comment-user-name">
+                                <%- comment.user %>
+                            </div><div class="cinemapress-comment-user-said">
+                                <%- page.l.said %>
+                            </div><div class="cinemapress-comment-user-date">
+                                <%- comment.date %>
+                            </div><div class="cinemapress-comment-user-link">
+                                <a href="<%- comment.url %>#c<%- comment.id %>" title="<%= comment.title %>">#</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cinemapress-comment-bg cinemapress-comment-radius">
+                    <%- comment.comment %>
+                </div>
+            </div>
+        </div>
+    <% }); %>
+<% } %>
+
+<% /* Реклама слева страницы */ %>
+<% if (typeof page.adv === 'object' && page.adv.left) { %>
+    <div style="text-align:center;margin:10px auto">
+        <%- page.adv.left %>
+    </div>
+<% } %>
+
+<% /* Реклама справа страницы */ %>
+<% if (typeof page.adv === 'object' && page.adv.right) { %>
+    <div style="text-align:center;margin:10px auto">
+        <%- page.adv.right %>
+    </div>
+<% } %>
+
+<% /* Форма поиска */ %>
+<form action="/<%- page.urls.search %>" method="get">
+    <input type="text" name="q" value="<%- page.l.search %>">
+    <input type="submit" value="<%- page.l.search %>">
+</form>
