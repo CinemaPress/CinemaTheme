@@ -212,7 +212,7 @@
 <% /* Цикл блоков связанных фильмов */ %>
 <% if (typeof movies === 'object') { %>
     <% for (var type in movies) { %>
-        <% if (movies.hasOwnProperty(type) && index[type].length) { %>
+        <% if (movies.hasOwnProperty(type) && movies[type].length) { %>
             <% movies[type].forEach(function (category) { %>
 
                 <% /* Название блока */ %>
