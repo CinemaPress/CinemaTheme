@@ -9,17 +9,14 @@
 <% page.urls.years.forEach(function(year) { %>
     <a href="<%- year.url %>"><%- year.title %></a>
 <% }); %>
-
 <% /* Жанры (список в настройках отображения) */ %>
 <% page.urls.genres.forEach(function(genre) { %>
     <a href="<%- genre.url %>"><%- genre.title %></a>
 <% }); %>
-
 <% /* Страны (список в настройках отображения) */ %>
 <% page.urls.countries.forEach(function(country) { %>
     <a href="<%- country.url %>"><%- country.title %></a>
 <% }); %>
-
 <% /* Ссылки на категорию типа */ %>
 <a href="/<%- page.urls.type %>/<%- page.urls.types.movie %>"><%- page.l.movies %></a>
 <a href="/<%- page.urls.type %>/<%- page.urls.types.mult %>"><%- page.l.cartoons %></a>
@@ -30,7 +27,7 @@
 
 <% /* Кнопка случайного фильма в меню */ %>
 <span class="randomMovieMenu" style="display:none">
-    <a href="/?random" class="cinemapress-random-menu"><%- page.l.lucky %></a>
+    <a href="/?random=<%- Math.random() %>" class="cinemapress-random-menu"><%- page.l.lucky %></a>
 </span>
 
 <% /* Кнопка продолжения просмотра */ %>

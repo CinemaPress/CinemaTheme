@@ -40,12 +40,18 @@
 
             <% /* Список тегов */ %>
             <% if (content.tags) { %>
-                <span class="cinemapress-content-publish-tags" style="vertical-align: middle;"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU1LjI1IDU1LjI1IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1NS4yNSA1NS4yNTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0wLjUyMyw1MS45MzNsLTAuNDk3LDIuMDg1Yy0wLjAxNiwwLjA2Ny0wLjAyLDAuMTM1LTAuMDIyLDAuMjAyQzAuMDA0LDU0LjIzNCwwLDU0LjI0NiwwLDU0LjI1OSAgIGMwLjAwMSwwLjExNCwwLjAyNiwwLjIyNSwwLjA2NSwwLjMzMmMwLjAwOSwwLjAyNSwwLjAxOSwwLjA0NywwLjAzLDAuMDcxYzAuMDQ5LDAuMTA3LDAuMTEsMC4yMSwwLjE5NiwwLjI5NiAgIGMwLjA5NSwwLjA5NSwwLjIwNywwLjE2OCwwLjMyOCwwLjIxOGMwLjEyMSwwLjA1LDAuMjUsMC4wNzUsMC4zNzksMC4wNzVjMC4wNzcsMCwwLjE1NS0wLjAwOSwwLjIzMS0wLjAyN2wyLjA4Ni0wLjQ5NyAgIEwwLjUyMyw1MS45MzN6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8cGF0aCBkPSJNNTIuNjE4LDIuNjMxYy0zLjUxLTMuNTA4LTkuMjE5LTMuNTA4LTEyLjcyOSwwTDMuODI3LDM4LjY5M0MzLjgxLDM4LjcxLDMuOCwzOC43MzEsMy43ODUsMzguNzQ5ICAgYy0wLjAyMSwwLjAyNC0wLjAzOSwwLjA1LTAuMDU4LDAuMDc2Yy0wLjA1MywwLjA3NC0wLjA5NCwwLjE1My0wLjEyNSwwLjIzOWMtMC4wMDksMC4wMjYtMC4wMjIsMC4wNDktMC4wMjksMC4wNzUgICBjLTAuMDAzLDAuMDEtMC4wMDksMC4wMi0wLjAxMiwwLjAzbC0yLjQ5NSwxMC40OEw1LjYsNTQuMTgybDEwLjQ4LTIuNDk1YzAuMDI3LTAuMDA2LDAuMDUxLTAuMDIxLDAuMDc3LTAuMDMgICBjMC4wMzQtMC4wMTEsMC4wNjYtMC4wMjQsMC4wOTktMC4wMzljMC4wNzItMC4wMzMsMC4xMzktMC4wNzQsMC4yMDEtMC4xMjNjMC4wMjQtMC4wMTksMC4wNDktMC4wMzMsMC4wNzItMC4wNTQgICBjMC4wMDgtMC4wMDgsMC4wMTgtMC4wMTIsMC4wMjYtMC4wMmwzNi4wNjMtMzYuMDYzQzU2LjEyNywxMS44NSw1Ni4xMjcsNi4xNCw1Mi42MTgsMi42MzF6IE0xNy4xNTcsNDcuOTkybDAuMzU0LTMuMTgzICAgTDM5Ljg4OSwyMi40M2MwLjM5MS0wLjM5MSwwLjM5MS0xLjAyMywwLTEuNDE0cy0xLjAyMy0wLjM5MS0xLjQxNCwwTDE2LjA5Nyw0My4zOTVsLTQuNzczLDAuNTNsMC41My00Ljc3M2wyMi4zOC0yMi4zNzggICBjMC4zOTEtMC4zOTEsMC4zOTEtMS4wMjMsMC0xLjQxNHMtMS4wMjMtMC4zOTEtMS40MTQsMEwxMC40NCwzNy43MzhsLTMuMTgzLDAuMzU0TDM0Ljk0LDEwLjQwOWw5LjksOS45TDE3LjE1Nyw0Ny45OTJ6ICAgIE00Ni4yNTQsMTguODk1bC05LjktOS45bDEuNDE0LTEuNDE0bDkuOSw5LjlMNDYuMjU0LDE4Ljg5NXogTTQ5LjA4MiwxNi4wNjdsLTkuOS05LjlsMS40MTUtMS40MTVsOS45LDkuOUw0OS4wODIsMTYuMDY3eiIgZmlsbD0iI0ZGRkZGRiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" style="width: 10px;vertical-align: middle;"> <%- content.tags %></span>
+                <span class="cinemapress-content-publish-tags" style="vertical-align: middle;"><img
+                            src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU1LjI1IDU1LjI1IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1NS4yNSA1NS4yNTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0wLjUyMyw1MS45MzNsLTAuNDk3LDIuMDg1Yy0wLjAxNiwwLjA2Ny0wLjAyLDAuMTM1LTAuMDIyLDAuMjAyQzAuMDA0LDU0LjIzNCwwLDU0LjI0NiwwLDU0LjI1OSAgIGMwLjAwMSwwLjExNCwwLjAyNiwwLjIyNSwwLjA2NSwwLjMzMmMwLjAwOSwwLjAyNSwwLjAxOSwwLjA0NywwLjAzLDAuMDcxYzAuMDQ5LDAuMTA3LDAuMTEsMC4yMSwwLjE5NiwwLjI5NiAgIGMwLjA5NSwwLjA5NSwwLjIwNywwLjE2OCwwLjMyOCwwLjIxOGMwLjEyMSwwLjA1LDAuMjUsMC4wNzUsMC4zNzksMC4wNzVjMC4wNzcsMCwwLjE1NS0wLjAwOSwwLjIzMS0wLjAyN2wyLjA4Ni0wLjQ5NyAgIEwwLjUyMyw1MS45MzN6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8cGF0aCBkPSJNNTIuNjE4LDIuNjMxYy0zLjUxLTMuNTA4LTkuMjE5LTMuNTA4LTEyLjcyOSwwTDMuODI3LDM4LjY5M0MzLjgxLDM4LjcxLDMuOCwzOC43MzEsMy43ODUsMzguNzQ5ICAgYy0wLjAyMSwwLjAyNC0wLjAzOSwwLjA1LTAuMDU4LDAuMDc2Yy0wLjA1MywwLjA3NC0wLjA5NCwwLjE1My0wLjEyNSwwLjIzOWMtMC4wMDksMC4wMjYtMC4wMjIsMC4wNDktMC4wMjksMC4wNzUgICBjLTAuMDAzLDAuMDEtMC4wMDksMC4wMi0wLjAxMiwwLjAzbC0yLjQ5NSwxMC40OEw1LjYsNTQuMTgybDEwLjQ4LTIuNDk1YzAuMDI3LTAuMDA2LDAuMDUxLTAuMDIxLDAuMDc3LTAuMDMgICBjMC4wMzQtMC4wMTEsMC4wNjYtMC4wMjQsMC4wOTktMC4wMzljMC4wNzItMC4wMzMsMC4xMzktMC4wNzQsMC4yMDEtMC4xMjNjMC4wMjQtMC4wMTksMC4wNDktMC4wMzMsMC4wNzItMC4wNTQgICBjMC4wMDgtMC4wMDgsMC4wMTgtMC4wMTIsMC4wMjYtMC4wMmwzNi4wNjMtMzYuMDYzQzU2LjEyNywxMS44NSw1Ni4xMjcsNi4xNCw1Mi42MTgsMi42MzF6IE0xNy4xNTcsNDcuOTkybDAuMzU0LTMuMTgzICAgTDM5Ljg4OSwyMi40M2MwLjM5MS0wLjM5MSwwLjM5MS0xLjAyMywwLTEuNDE0cy0xLjAyMy0wLjM5MS0xLjQxNCwwTDE2LjA5Nyw0My4zOTVsLTQuNzczLDAuNTNsMC41My00Ljc3M2wyMi4zOC0yMi4zNzggICBjMC4zOTEtMC4zOTEsMC4zOTEtMS4wMjMsMC0xLjQxNHMtMS4wMjMtMC4zOTEtMS40MTQsMEwxMC40NCwzNy43MzhsLTMuMTgzLDAuMzU0TDM0Ljk0LDEwLjQwOWw5LjksOS45TDE3LjE1Nyw0Ny45OTJ6ICAgIE00Ni4yNTQsMTguODk1bC05LjktOS45bDEuNDE0LTEuNDE0bDkuOSw5LjlMNDYuMjU0LDE4Ljg5NXogTTQ5LjA4MiwxNi4wNjdsLTkuOS05LjlsMS40MTUtMS40MTVsOS45LDkuOUw0OS4wODIsMTYuMDY3eiIgZmlsbD0iI0ZGRkZGRiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="
+                            alt="Tags"
+                            style="width: 10px;vertical-align: middle;"> <%- content.tags %></span>
             <% } %>
 
             <% /* Дата публикации */ %>
             <% if (content.publish) { %>
-                <span class="cinemapress-content-publish-publish" style="vertical-align: middle;"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDYwIDYwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA2MCA2MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8Zz4KCTxjaXJjbGUgY3g9IjMwIiBjeT0iMjkuODc5IiByPSIyIiBmaWxsPSIjRkZGRkZGIi8+Cgk8cGF0aCBkPSJNMzAsMEMxMy40NTgsMCwwLDEzLjQ1OCwwLDMwczEzLjQ1OCwzMCwzMCwzMHMzMC0xMy40NTgsMzAtMzBTNDYuNTQyLDAsMzAsMHogTTI5LDcuODc5YzAtMC41NTMsMC40NDgtMSwxLTFzMSwwLjQ0NywxLDEgICB2MWMwLDAuNTUzLTAuNDQ4LDEtMSwxcy0xLTAuNDQ3LTEtMVY3Ljg3OXogTTksMzAuODc5SDhjLTAuNTUyLDAtMS0wLjQ0Ny0xLTFzMC40NDgtMSwxLTFoMWMwLjU1MiwwLDEsMC40NDcsMSwxICAgUzkuNTUyLDMwLjg3OSw5LDMwLjg3OXogTTE1Ljg1OCw0NS40MzZsLTAuNzA3LDAuNzA3Yy0wLjE5NSwwLjE5NS0wLjQ1MSwwLjI5My0wLjcwNywwLjI5M3MtMC41MTItMC4wOTgtMC43MDctMC4yOTMgICBjLTAuMzkxLTAuMzkxLTAuMzkxLTEuMDIzLDAtMS40MTRsMC43MDctMC43MDdjMC4zOTEtMC4zOTEsMS4wMjMtMC4zOTEsMS40MTQsMFMxNi4yNDksNDUuMDQ1LDE1Ljg1OCw0NS40MzZ6IE0xNS44NTgsMTUuNzM2ICAgYy0wLjE5NSwwLjE5NS0wLjQ1MSwwLjI5My0wLjcwNywwLjI5M3MtMC41MTItMC4wOTgtMC43MDctMC4yOTNsLTAuNzA3LTAuNzA3Yy0wLjM5MS0wLjM5MS0wLjM5MS0xLjAyMywwLTEuNDE0ICAgczEuMDIzLTAuMzkxLDEuNDE0LDBsMC43MDcsMC43MDdDMTYuMjQ5LDE0LjcxMywxNi4yNDksMTUuMzQ2LDE1Ljg1OCwxNS43MzZ6IE0zMSw1MS44NzljMCwwLjU1My0wLjQ0OCwxLTEsMXMtMS0wLjQ0Ny0xLTF2LTEgICBjMC0wLjU1MywwLjQ0OC0xLDEtMXMxLDAuNDQ3LDEsMVY1MS44Nzl6IE0zMCwzMy44NzljLTEuODU4LDAtMy40MTEtMS4yOC0zLjg1OC0zSDE5Yy0wLjU1MiwwLTEtMC40NDctMS0xczAuNDQ4LTEsMS0xaDcuMTQyICAgYzAuMzY0LTEuMzk5LDEuNDU5LTIuNDk0LDIuODU4LTIuODU4VjE1Ljg3OWMwLTAuNTUzLDAuNDQ4LTEsMS0xczEsMC40NDcsMSwxdjEwLjE0MmMxLjcyLDAuNDQ3LDMsMS45OTksMywzLjg1OCAgIEMzNCwzMi4wODUsMzIuMjA2LDMzLjg3OSwzMCwzMy44Nzl6IE00Ni4yNjMsNDYuMTQzYy0wLjE5NSwwLjE5NS0wLjQ1MSwwLjI5My0wLjcwNywwLjI5M3MtMC41MTItMC4wOTgtMC43MDctMC4yOTNsLTAuNzA3LTAuNzA3ICAgYy0wLjM5MS0wLjM5MS0wLjM5MS0xLjAyMywwLTEuNDE0czEuMDIzLTAuMzkxLDEuNDE0LDBsMC43MDcsMC43MDdDNDYuNjU0LDQ1LjExOSw0Ni42NTQsNDUuNzUyLDQ2LjI2Myw0Ni4xNDN6IE00Ni4yNjMsMTUuMDI5ICAgbC0wLjcwNywwLjcwN2MtMC4xOTUsMC4xOTUtMC40NTEsMC4yOTMtMC43MDcsMC4yOTNzLTAuNTEyLTAuMDk4LTAuNzA3LTAuMjkzYy0wLjM5MS0wLjM5MS0wLjM5MS0xLjAyMywwLTEuNDE0bDAuNzA3LTAuNzA3ICAgYzAuMzkxLTAuMzkxLDEuMDIzLTAuMzkxLDEuNDE0LDBTNDYuNjU0LDE0LjYzOSw0Ni4yNjMsMTUuMDI5eiBNNTIsMzAuODc5aC0xYy0wLjU1MiwwLTEtMC40NDctMS0xczAuNDQ4LTEsMS0xaDEgICBjMC41NTIsMCwxLDAuNDQ3LDEsMVM1Mi41NTIsMzAuODc5LDUyLDMwLjg3OXoiIGZpbGw9IiNGRkZGRkYiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" style="width: 10px;vertical-align: middle;"> <%- content.publish %></span>
+                <span class="cinemapress-content-publish-publish" style="vertical-align: middle;"><img
+                            src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDYwIDYwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA2MCA2MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8Zz4KCTxjaXJjbGUgY3g9IjMwIiBjeT0iMjkuODc5IiByPSIyIiBmaWxsPSIjRkZGRkZGIi8+Cgk8cGF0aCBkPSJNMzAsMEMxMy40NTgsMCwwLDEzLjQ1OCwwLDMwczEzLjQ1OCwzMCwzMCwzMHMzMC0xMy40NTgsMzAtMzBTNDYuNTQyLDAsMzAsMHogTTI5LDcuODc5YzAtMC41NTMsMC40NDgtMSwxLTFzMSwwLjQ0NywxLDEgICB2MWMwLDAuNTUzLTAuNDQ4LDEtMSwxcy0xLTAuNDQ3LTEtMVY3Ljg3OXogTTksMzAuODc5SDhjLTAuNTUyLDAtMS0wLjQ0Ny0xLTFzMC40NDgtMSwxLTFoMWMwLjU1MiwwLDEsMC40NDcsMSwxICAgUzkuNTUyLDMwLjg3OSw5LDMwLjg3OXogTTE1Ljg1OCw0NS40MzZsLTAuNzA3LDAuNzA3Yy0wLjE5NSwwLjE5NS0wLjQ1MSwwLjI5My0wLjcwNywwLjI5M3MtMC41MTItMC4wOTgtMC43MDctMC4yOTMgICBjLTAuMzkxLTAuMzkxLTAuMzkxLTEuMDIzLDAtMS40MTRsMC43MDctMC43MDdjMC4zOTEtMC4zOTEsMS4wMjMtMC4zOTEsMS40MTQsMFMxNi4yNDksNDUuMDQ1LDE1Ljg1OCw0NS40MzZ6IE0xNS44NTgsMTUuNzM2ICAgYy0wLjE5NSwwLjE5NS0wLjQ1MSwwLjI5My0wLjcwNywwLjI5M3MtMC41MTItMC4wOTgtMC43MDctMC4yOTNsLTAuNzA3LTAuNzA3Yy0wLjM5MS0wLjM5MS0wLjM5MS0xLjAyMywwLTEuNDE0ICAgczEuMDIzLTAuMzkxLDEuNDE0LDBsMC43MDcsMC43MDdDMTYuMjQ5LDE0LjcxMywxNi4yNDksMTUuMzQ2LDE1Ljg1OCwxNS43MzZ6IE0zMSw1MS44NzljMCwwLjU1My0wLjQ0OCwxLTEsMXMtMS0wLjQ0Ny0xLTF2LTEgICBjMC0wLjU1MywwLjQ0OC0xLDEtMXMxLDAuNDQ3LDEsMVY1MS44Nzl6IE0zMCwzMy44NzljLTEuODU4LDAtMy40MTEtMS4yOC0zLjg1OC0zSDE5Yy0wLjU1MiwwLTEtMC40NDctMS0xczAuNDQ4LTEsMS0xaDcuMTQyICAgYzAuMzY0LTEuMzk5LDEuNDU5LTIuNDk0LDIuODU4LTIuODU4VjE1Ljg3OWMwLTAuNTUzLDAuNDQ4LTEsMS0xczEsMC40NDcsMSwxdjEwLjE0MmMxLjcyLDAuNDQ3LDMsMS45OTksMywzLjg1OCAgIEMzNCwzMi4wODUsMzIuMjA2LDMzLjg3OSwzMCwzMy44Nzl6IE00Ni4yNjMsNDYuMTQzYy0wLjE5NSwwLjE5NS0wLjQ1MSwwLjI5My0wLjcwNywwLjI5M3MtMC41MTItMC4wOTgtMC43MDctMC4yOTNsLTAuNzA3LTAuNzA3ICAgYy0wLjM5MS0wLjM5MS0wLjM5MS0xLjAyMywwLTEuNDE0czEuMDIzLTAuMzkxLDEuNDE0LDBsMC43MDcsMC43MDdDNDYuNjU0LDQ1LjExOSw0Ni42NTQsNDUuNzUyLDQ2LjI2Myw0Ni4xNDN6IE00Ni4yNjMsMTUuMDI5ICAgbC0wLjcwNywwLjcwN2MtMC4xOTUsMC4xOTUtMC40NTEsMC4yOTMtMC43MDcsMC4yOTNzLTAuNTEyLTAuMDk4LTAuNzA3LTAuMjkzYy0wLjM5MS0wLjM5MS0wLjM5MS0xLjAyMywwLTEuNDE0bDAuNzA3LTAuNzA3ICAgYzAuMzkxLTAuMzkxLDEuMDIzLTAuMzkxLDEuNDE0LDBTNDYuNjU0LDE0LjYzOSw0Ni4yNjMsMTUuMDI5eiBNNTIsMzAuODc5aC0xYy0wLjU1MiwwLTEtMC40NDctMS0xczAuNDQ4LTEsMS0xaDEgICBjMC41NTIsMCwxLDAuNDQ3LDEsMVM1Mi41NTIsMzAuODc5LDUyLDMwLjg3OXoiIGZpbGw9IiNGRkZGRkYiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"
+                            alt="Publish"
+                            style="width: 10px;vertical-align: middle;"> <%- content.publish %></span>
             <% } %>
 
         </div>
@@ -56,7 +62,7 @@
 <% /* Блок случайного фильма в категории */ %>
 <div class="randomMovieCategory">
     <div class="cinemapress-random-category"
-         onclick="window.location.href='<%- page.url %>?random'">
+         onclick="window.location.href='<%- page.url %><%- (page.url.indexOf('?') + 1 ? '&' : '?')  %>random=<%- Math.random() %>'">
         <img src="/themes/default/public/mobile/dice.svg" alt="<%- page.l.random %>">
         <span><%- page.l.lucky %></span>
         <small><%- page.l.random %></small>
@@ -83,131 +89,7 @@
 <% if (typeof movies === 'object' && movies.length) { %>
     <% movies.forEach(function (movie) { %>
 
-        <% /* Информацию о фильме выводить проверяя существование */ %>
-
-        <% /* Тип */ %>
-        <% if (movie.type === 0) { %>Фильм<% } %>
-        <% if (movie.type === 1) { %>Сериал<% } %>
-
-        <% /* ID КиноПоиск */ %>
-        <% if (movie.kp_id) { %>ID КиноПоиск: <%- movie.kp_id %><% } %>
-
-        <% /* ID IMDb */ %>
-        <% if (movie.imdb_id) { %>ID IMDb: <%- movie.imdb_id %><% } %>
-
-        <% /* ID TMDb */ %>
-        <% if (movie.tmdb_id) { %>ID TMDb: <%- movie.tmdb_id %><% } %>
-
-        <% /* ID Douban */ %>
-        <% if (movie.douban_id) { %>ID Douban: <%- movie.douban_id %><% } %>
-
-        <% /* Название фильма */ %>
-        <%- movie.title %>
-        <% /* movie.title_ru - перевед. название */ %>
-        <% /* movie.title_en - ориг. название */ %>
-        <% /* movie.title_full - перевед. название / ориг. название (год) */ %>
-        <% /* movie.title_page - название для <title> */ %>
-
-        <% /* Описание фильма */ %>
-        <%- movie.description %>
-        <% /* movie.description_meta - описание для meta description */ %>
-        <% /* movie.description_short - короткое описание до 200 симв. */ %>
-
-        <% /* Год */ %>
-        <%- movie.year %>
-        <% /* movie.year_url - ссылка: <a href="...">год</a> */ %>
-        <% /* movie.year2 - фильм: год, сериал: 1 сезон 1 серия */ %>
-        <% /* movie.year3 - фильм: год, сериал: E01S01 */ %>
-
-        <% /* Список стран */ %>
-        <% if (movie.countries) { %><%- page.l.countries %>: <%- movie.countries %><% } %>
-        <% /* movie.countries_url - список стран в виде ссылок */ %>
-        <% /* movie.countries_arr - массив стран */ %>
-        <% /* movie.country - случайная страна */ %>
-
-        <% /* Список жанров */ %>
-        <% if (movie.genres) { %><%- page.l.genres %>: <%- movie.genres %><% } %>
-        <% /* movie.genres_url - список жанров в виде ссылок */ %>
-        <% /* movie.genres_arr - массив жанров */ %>
-        <% /* movie.genre - случайный жанр */ %>
-
-        <% /* Список режиссеров */ %>
-        <% if (movie.directors) { %><%- page.l.directors %>: <%- movie.directors %><% } %>
-        <% /* movie.directors_url - список режиссеров в виде ссылок */ %>
-        <% /* movie.directors_arr - массив режиссеров */ %>
-        <% /* movie.directors - случайный режиссер */ %>
-
-        <% /* Список актеров */ %>
-        <% if (movie.actors) { %><%- page.l.actors %>: <%- movie.actors %><% } %>
-        <% /* movie.actors_url - список актеров в виде ссылок */ %>
-        <% /* movie.actors_arr - массив актеров */ %>
-        <% /* movie.actors - случайный актер */ %>
-
-        <% /* Постер фильма */ %>
-        <img src="<%- movie.poster %>" alt="<%= movie.title %>">
-        <% /* movie.poster_big - большой постер */ %>
-        <% /* movie.poster - стандартный постер */ %>
-        <% /* movie.poster_min - маленький постер */ %>
-
-        <% /* Кадр из фильма */ %>
-        <img src="<%- movie.picture %>" alt="<%= movie.title %>">
-        <% /* movie.picture_big - большой кадр */ %>
-        <% /* movie.picture - стандартный кадр */ %>
-        <% /* movie.picture_min - маленький кадр */ %>
-        <% /* movie.pictures - массив кадров */ %>
-
-        <% /* Ссылка на фильм */ %>
-        <a href="<%- movie.url %>"><%= movie.title %></a>
-        <% /* movie.pathname - URL без домена /movie/idXXX */ %>
-
-        <% /* Ссылка на кадры */ %>
-        <% if (page.urls.movies.picture) { %>
-            <a href="<%- movie.url %>/<%- page.urls.movies.picture %>"><%- page.l.picture %></a>
-        <% } %>
-        <% /* Ссылка на трейлер */ %>
-        <% if (page.urls.movies.trailer) { %>
-            <a href="<%- movie.url %>/<%- page.urls.movies.trailer %>"><%- page.l.trailer %></a>
-        <% } %>
-        <% /* Ссылка на онлайн */ %>
-        <% if (page.urls.movies.online) { %>
-            <a href="<%- movie.url %>/<%- page.urls.movies.online %>"><%- page.l.online %></a>
-        <% } %>
-        <% /* Ссылка на скачать */ %>
-        <% if (page.urls.movies.download) { %>
-            <a href="<%- movie.url %>/<%- page.urls.movies.download %>"><%- page.l.download %></a>
-        <% } %>
-
-        <% /* Качество */ %>
-        <% if (movie.quality) { %><%- page.l.quality %>: <%- movie.quality %><% } %>
-
-        <% /* Перевод */ %>
-        <% if (movie.translate) { %><%- page.l.translate %>: <%- movie.translate %><% } %>
-
-        <% /* Общий рейтинг (1-100) и число голосов */ %>
-        <% if (movie.vote) { %>
-            <%- page.l.rating %>: <%- movie.rating %> (<%- movie.vote %> <%- page.l.votes %>)
-        <% } %>
-
-        <% /* КиноПоиск рейтинг (1-100) и число голосов */ %>
-        <% if (movie.kp_vote) { %>
-            <%- page.l.kp %>: <%- movie.kp_rating %> (<%- movie.kp_vote %> <%- page.l.votes %>)
-        <% } %>
-
-        <% /* IMDb рейтинг (1-100) и число голосов */ %>
-        <% if (movie.imdb_vote) { %>
-            <%- page.l.rating %>: <%- movie.imdb_rating %> (<%- movie.imdb_vote %> <%- page.l.votes %>)
-        <% } %>
-
-        <% /* Вышел на экраны или нет */ %>
-        <% if (movie.passed) { %>Премьера состоялась<% } %>
-
-        <% /* Дата премьеры фильма */ %>
-        <% if (movie.premiere) { %><%- page.l.premiere %>: <%- movie.premiere %><% } %>
-
-        <% /* Настраиваемое поле */ %>
-        <% if (movie && movie.custom && movie.custom["hello"]) { %>
-            <%- movie.custom["hello"] %>
-        <% } %>
+        <%- include('includes/single.ejs', {movie: movie}); -%>
 
     <% }); %>
 <% } %>
@@ -248,7 +130,7 @@
 <% if (typeof content === 'object') { %>
     <% if (page.comments) { %>
         <%- page.comments %>
-    <% } else { %>
+    <% } else if (typeof comments === 'object' && typeof comments.config === 'object') { %>
         <div id="cinemapress-comments">
             <h3 class="cinemapress-comment-h3">
                 <%- page.l.comments %>
@@ -265,16 +147,23 @@
                 <div class="cinemapress-comment-form">
                     <% if (comments.config.bb_codes) { %>
                         <div class="cinemapress-comment-form-bb">
-                            <span class="cinemapress-comment-bg cinemapress-comment-form-bb-b" data-bb-code="b"><%- page.l.bold.toLowerCase() %></span>
-                            <span class="cinemapress-comment-bg cinemapress-comment-form-bb-i" data-bb-code="i"><%- page.l.italic.toLowerCase() %></span>
-                            <span class="cinemapress-comment-bg cinemapress-comment-form-bb-spoiler" data-bb-code="spoiler">👻 <%- page.l.spoiler.toLowerCase() %></span>
-                            <span class="cinemapress-comment-bg cinemapress-comment-form-bb-search" data-bb-code="search">🔍 <%- page.l.search.toLowerCase() %></span>
-                            <input class="cinemapress-comment-bg cinemapress-comment-form-anonymous" name="comment_anonymous" type="text" placeholder="<%- page.l.username %>">
+                            <span class="cinemapress-comment-bg cinemapress-comment-form-bb-b"
+                                  data-bb-code="b"><%- page.l.bold.toLowerCase() %></span>
+                            <span class="cinemapress-comment-bg cinemapress-comment-form-bb-i"
+                                  data-bb-code="i"><%- page.l.italic.toLowerCase() %></span>
+                            <span class="cinemapress-comment-bg cinemapress-comment-form-bb-spoiler"
+                                  data-bb-code="spoiler">👻 <%- page.l.spoiler.toLowerCase() %></span>
+                            <span class="cinemapress-comment-bg cinemapress-comment-form-bb-search"
+                                  data-bb-code="search">🔍 <%- page.l.search.toLowerCase() %></span>
+                            <input class="cinemapress-comment-bg cinemapress-comment-form-anonymous"
+                                   name="comment_anonymous" type="text" placeholder="<%- page.l.username %>">
                         </div>
                     <% } %>
                     <div>
                         <div class="cinemapress-comment-textarea-div">
-                            <textarea name="comment_text" class="cinemapress-comment-bg cinemapress-comment-textarea" placeholder="<%- page.l.comment %>" autocomplete="off" autocapitalize="off" spellcheck="false"></textarea>
+                            <textarea name="comment_text" class="cinemapress-comment-bg cinemapress-comment-textarea"
+                                      placeholder="<%- page.l.comment %>" autocomplete="off" autocapitalize="off"
+                                      spellcheck="false"></textarea>
                             <div class="cinemapress-comment-form-bg"></div>
                             <div class="cinemapress-comment-button-bg hover-off" data-comment-type="submit">
                                 <span class="cinemapress-comment-button-text"></span>
@@ -303,12 +192,17 @@
                                 <% } %>
                                 <div class="cinemapress-comment-question-bg"></div>
                                 <% if (comments.config.question_poster) { %>
-                                    <div class="cinemapress-comment-question-bg-poster" style="background-image:url('<%- comments.config.question_poster %>')"></div>
+                                    <div class="cinemapress-comment-question-bg-poster"
+                                         style="background-image:url('<%- comments.config.question_poster %>')"></div>
                                 <% } %>
                             </div>
                         <% } %>
                     </div>
-                    <div style="font-size:8px;text-align:right;opacity:.2">This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" style="font-size:8px" target="_blank">Privacy Policy</a> and <a href="https://policies.google.com/terms" style="font-size:8px" target="_blank">Terms of Service</a> apply.</div>
+                    <div style="font-size:8px;text-align:right;opacity:.2">This site is protected by reCAPTCHA and the
+                        Google <a href="https://policies.google.com/privacy" style="font-size:8px" target="_blank">Privacy
+                            Policy</a> and <a href="https://policies.google.com/terms" style="font-size:8px"
+                                              target="_blank">Terms of Service</a> apply.
+                    </div>
                 </div>
                 <%- comments.indexer ? comments.indexer : '' %>
                 <% if (comments.list && comments.list.length) { %>
@@ -335,26 +229,33 @@
                                 <% } %>
                                 <div class="cinemapress-comment-head-meta">
                                     <div class="cinemapress-comment-head-meta-vote">
-                                <span class="cinemapress-comment-like" data-comment-type="like" data-comment-id="<%- comment.id %>" title="<%= page.l.like %>">
-                                    <span class="cinemapress-comment-like-icon"></span>
-                                    <span class="cinemapress-comment-like-number"><%- comment.like %></span>
-                                </span>
-                                        <span class="cinemapress-comment-dislike" data-comment-type="dislike" data-comment-id="<%- comment.id %>" title="<%= page.l.dislike %>">
-                                    <span class="cinemapress-comment-dislike-number"><%- comment.dislike %></span>
-                                    <span class="cinemapress-comment-dislike-icon"></span>
-                                </span>
-                                        <span class="cinemapress-comment-reply" data-reply-id="<%- comment.id %>" data-bb-code="b" data-bb-value="<%- comment.user %>" title="<%= page.l.reply %>">
-                                    <span class="cinemapress-comment-reply-icon"></span>
-                                </span>
+                                        <span class="cinemapress-comment-like" data-comment-type="like"
+                                              data-comment-id="<%- comment.id %>" title="<%= page.l.like %>">
+                                            <span class="cinemapress-comment-like-icon"></span>
+                                            <span class="cinemapress-comment-like-number"><%- comment.like %></span>
+                                        </span>
+                                        <span class="cinemapress-comment-dislike" data-comment-type="dislike"
+                                              data-comment-id="<%- comment.id %>" title="<%= page.l.dislike %>">
+                                            <span class="cinemapress-comment-dislike-number"><%- comment.dislike %></span>
+                                            <span class="cinemapress-comment-dislike-icon"></span>
+                                        </span>
+                                        <span class="cinemapress-comment-reply" data-reply-id="<%- comment.id %>"
+                                              data-bb-code="b" data-bb-value="<%- comment.user %>"
+                                              title="<%= page.l.reply %>">
+                                            <span class="cinemapress-comment-reply-icon"></span>
+                                        </span>
                                     </div>
                                     <div class="cinemapress-comment-user" data-comment-id="<%- comment.id %>">
                                         <div class="cinemapress-comment-user-name">
                                             <%- comment.user %>
-                                        </div><div class="cinemapress-comment-user-said">
+                                        </div>
+                                        <div class="cinemapress-comment-user-said">
                                             <%- page.l.said %>
-                                        </div><div class="cinemapress-comment-user-date">
+                                        </div>
+                                        <div class="cinemapress-comment-user-date">
                                             <%- comment.date %>
-                                        </div><div class="cinemapress-comment-user-link">
+                                        </div>
+                                        <div class="cinemapress-comment-user-link">
                                             <a href="<%- comment.url %>#c<%- comment.id %>">#</a>
                                         </div>
                                     </div>
@@ -377,10 +278,12 @@
             <% } %>
             <div class="cinemapress-comment-arrow">
                 <% if (comments && comments.prev) { %>
-                    <div class="cinemapress-prev-comments" onclick="window.location.href='?page=<%- comments.prev %>#cinemapress-comments'"></div>
+                    <div class="cinemapress-prev-comments"
+                         onclick="window.location.href='?page=<%- comments.prev %>#cinemapress-comments'"></div>
                 <% } %>
                 <% if (comments && comments.next) { %>
-                    <div class="cinemapress-next-comments" onclick="window.location.href='?page=<%- comments.next %>#cinemapress-comments'"></div>
+                    <div class="cinemapress-next-comments"
+                         onclick="window.location.href='?page=<%- comments.next %>#cinemapress-comments'"></div>
                 <% } %>
             </div>
         </div>
