@@ -101,36 +101,7 @@
 <% } %>
 
 <% /* Пагинация на главной странице */ %>
-<% if (typeof page.pagination === 'object') { %>
-
-    <% /* Первая страница */ %>
-    <% if (page.pagination.first) { %>
-        <a href="<%- page.pagination.first.link %>"><%- page.pagination.first.number %></a>
-    <% } %>
-
-    <% /* Номера страниц до текущей */ %>
-    <% if (page.pagination.prev.length) { %>
-        <% page.pagination.prev.forEach(function (prev) { %>
-            <a href="<%- prev.link %>"><%- prev.number %></a>
-        <% }); %>
-    <% } %>
-
-    <% /* Текуща страница */ %>
-    <%- page.pagination.current %>
-
-    <% /* Номера страниц после текущей */ %>
-    <% if (page.pagination.next.length) { %>
-        <% page.pagination.next.forEach(function (next) { %>
-            <a href="<%- next.link %>"><%- next.number %></a>
-        <% }); %>
-    <% } %>
-
-    <% /* Последняя страница */ %>
-    <% if (page.pagination.last) { %>
-        <a href="<%- page.pagination.last.link %>"><%- page.pagination.last.number %></a>
-    <% } %>
-
-<% } %>
+<%- include('includes/pagination.ejs'); -%>
 
 <% /* Реклама внизу страницы */ %>
 <% if (typeof page.adv === 'object' && page.adv.bottom) { %>
