@@ -1,6 +1,6 @@
 {
   "name": "cinematheme",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Create theme for CinemaPress",
   "main": "index.js",
   "license": "MIT",
@@ -16,11 +16,11 @@
   },
   "homepage": "https://github.com/CinemaPress",
   "dependencies": {
-    "ora": "4.0.3",
-    "jsdom": "16.2.0",
+    "ora": "4.0.4",
+    "jsdom": "16.2.2",
     "commander": "4.1.1",
     "fs-extra": "8.1.0",
-    "js-beautify": "1.10.3",
-    "website-scraper": "4.2.0"
+    "js-beautify": "1.11.0",
+    "website-scraper": "4.2.1"
   }
 }
