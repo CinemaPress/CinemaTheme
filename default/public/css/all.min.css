@@ -25,6 +25,15 @@
     margin-bottom: 10px;
 }
 
+@media (max-width:600px) {
+    .cinemapress-content-image {
+        display: block;
+        float: none;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
 .cinemapress-content-description {
     min-height: 127px;
 }
