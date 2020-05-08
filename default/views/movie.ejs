@@ -93,7 +93,7 @@
                 <h2><%- category.name %></h2>
 
                 <% /* Цикл фильмов в блоке */ %>
-                <% if (category.movies.length) { %>
+                <% if (typeof category === 'object' && category.movies && category.movies.length) { %>
                     <% category.movies.forEach(function (movie) { %>
                         <%- include('includes/single.ejs', {movie: movie}); -%>
                     <% }); %>
