@@ -7,6 +7,11 @@
 
 <body>
 
+<% /* Брендирование страницы (сразу после <body>) */ %>
+<% if (typeof page.adv === 'object' && page.adv.brand) { %>
+    <%- page.adv.brand %>
+<% } %>
+
 <% /* Реклама вверху страницы */ %>
 <% if (typeof page.adv === 'object' && page.adv.top) { %>
     <div style="text-align:center;margin:10px auto">

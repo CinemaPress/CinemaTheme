@@ -1,6 +1,6 @@
 {
   "name": "cinematheme",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Create theme for CinemaPress",
   "main": "index.js",
   "license": "MIT",
