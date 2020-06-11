@@ -24,5 +24,5 @@ if (!program.index) {
 }
 
 require('./')(program)
-    .then()
-    .catch(console.error);
+    .then(() => process.exit())
+    .catch(error => {console.error(error); process.exit()});
