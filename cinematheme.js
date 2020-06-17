@@ -15,7 +15,7 @@ program
     .option('-o, --online [url]',     'online url', /^(http|https):\/\/[^ "]+$/i)
     .option('-d, --download [url]',   'download url', /^(http|https):\/\/[^ "]+$/i)
     .option('-n, --name [name]',      'name theme', /^[A-Za-z0-9]+$/i)
-    .version('0.0.1')
+    .version('0.0.11')
     .parse(process.argv);
 
 if (!program.index) {

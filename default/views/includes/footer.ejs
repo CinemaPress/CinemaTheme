@@ -6,19 +6,25 @@
 
 <% /* Защищенный вывод email */ %>
 <span id="mylo"></span>
-<script>(function (d, i, l, r) {
-        d.getElementById(i).innerHTML = l + '@' + r;
-    })(window.document, 'mylo', '<%- page.email.split('@')[0] %>', '<%- page.email.split('@')[1] %>');</script>
+<script>(function (d, i, l, r) {d.getElementById(i).innerHTML = l + '@' + r;})(window.document, 'mylo', '<%- page.email.split('@')[0] %>', '<%- page.email.split('@')[1] %>');</script>
 
 <% /* Социальные сети */ %>
 <% if (page.social) { %>
-    <% if (page.social.vk) { %><a href="<%- page.social.vk %>" target="_blank"><%- page.l.vk %></a><% } %>
-    <% if (page.social.facebook) { %><a href="<%- page.social.facebook %>" target="_blank">facebook</a><% } %>
-    <% if (page.social.twitter) { %><a href="<%- page.social.twitter %>" target="_blank">twitter</a><% } %>
-    <% if (page.social.youtube) { %><a href="<%- page.social.youtube %>"
-                                       target="_blank"><%- page.l.youtube %></a><% } %>
-    <% if (page.social.instagram) { %><a href="<%- page.social.instagram %>"
-                                         target="_blank"><%- page.l.instagram %></a><% } %>
+    <% if (page.social.vk) { %>
+        <a href="<%- page.social.vk %>" target="_blank"><%- page.l.vk %></a>
+    <% } %>
+    <% if (page.social.facebook) { %>
+        <a href="<%- page.social.facebook %>" target="_blank">facebook</a>
+    <% } %>
+    <% if (page.social.twitter) { %>
+        <a href="<%- page.social.twitter %>" target="_blank">twitter</a>
+    <% } %>
+    <% if (page.social.youtube) { %>
+        <a href="<%- page.social.youtube %>" target="_blank"><%- page.l.youtube %></a>
+    <% } %>
+    <% if (page.social.instagram) { %>
+        <a href="<%- page.social.instagram %>" target="_blank"><%- page.l.instagram %></a>
+    <% } %>
 <% } %>
 <% /* Вывод системных скриптов */ %>
 <%- page.codes.footer %>

@@ -3,17 +3,13 @@
 <% if (movie.type === 0) { %>Фильм<% } %>
 <% if (movie.type === 1) { %>Сериал<% } %>
 <% /* ID КиноПоиск */ %>
-<% if (movie.kp_id) { %>ID КиноПоиск: <%- movie.kp_id %>
-<% } %>
+<% if (movie.kp_id) { %>ID КиноПоиск: <%- movie.kp_id %><% } %>
 <% /* ID IMDb */ %>
-<% if (movie.imdb_id) { %>ID IMDb: <%- movie.imdb_id %>
-<% } %>
+<% if (movie.imdb_id) { %>ID IMDb: <%- movie.imdb_id %><% } %>
 <% /* ID TMDb */ %>
-<% if (movie.tmdb_id) { %>ID TMDb: <%- movie.tmdb_id %>
-<% } %>
+<% if (movie.tmdb_id) { %>ID TMDb: <%- movie.tmdb_id %><% } %>
 <% /* ID Douban */ %>
-<% if (movie.douban_id) { %>ID Douban: <%- movie.douban_id %>
-<% } %>
+<% if (movie.douban_id) { %>ID Douban: <%- movie.douban_id %><% } %>
 <% /* Название фильма */ %>
 <%- movie.title %>
 <% /* movie.title_ru - перевед. название */ %>
@@ -30,26 +26,22 @@
 <% /* movie.year2 - фильм: год, сериал: 1 сезон 1 серия */ %>
 <% /* movie.year3 - фильм: год, сериал: E01S01 */ %>
 <% /* Список стран */ %>
-<% if (movie.countries) { %><%- page.l.countries %>: <%- movie.countries %>
-<% } %>
+<% if (movie.countries) { %><%- page.l.countries %>: <%- movie.countries %><% } %>
 <% /* movie.countries_url - список стран в виде ссылок */ %>
 <% /* movie.countries_arr - массив стран */ %>
 <% /* movie.country - случайная страна */ %>
 <% /* Список жанров */ %>
-<% if (movie.genres) { %><%- page.l.genres %>: <%- movie.genres %>
-<% } %>
+<% if (movie.genres) { %><%- page.l.genres %>: <%- movie.genres %><% } %>
 <% /* movie.genres_url - список жанров в виде ссылок */ %>
 <% /* movie.genres_arr - массив жанров */ %>
 <% /* movie.genre - случайный жанр */ %>
 <% /* Список режиссеров */ %>
-<% if (movie.directors) { %><%- page.l.directors %>: <%- movie.directors %>
-<% } %>
+<% if (movie.directors) { %><%- page.l.directors %>: <%- movie.directors %><% } %>
 <% /* movie.directors_url - список режиссеров в виде ссылок */ %>
 <% /* movie.directors_arr - массив режиссеров */ %>
 <% /* movie.directors - случайный режиссер */ %>
 <% /* Список актеров */ %>
-<% if (movie.actors) { %><%- page.l.actors %>: <%- movie.actors %>
-<% } %>
+<% if (movie.actors) { %><%- page.l.actors %>: <%- movie.actors %><% } %>
 <% /* movie.actors_url - список актеров в виде ссылок */ %>
 <% /* movie.actors_arr - массив актеров */ %>
 <% /* movie.actors - случайный актер */ %>
@@ -118,11 +110,9 @@
     <%- page.l.rating %>: <%- movie.imdb_rating %> (<%- movie.imdb_vote %> <%- page.l.votes %>)
 <% } %>
 <% /* Вышел на экраны или нет */ %>
-<% if (movie.passed) { %>Премьера состоялась
-<% } %>
+<% if (movie.passed) { %>Премьера состоялась<% } %>
 <% /* Дата премьеры фильма */ %>
-<% if (movie.premiere) { %><%- page.l.premiere %>: <%- movie.premiere %>
-<% } %>
+<% if (movie.premiere) { %><%- page.l.premiere %>: <%- movie.premiere %><% } %>
 <% /* Настраиваемое поле */ %>
 <% if (movie && movie.custom && movie.custom["hello"]) { %>
     <%- movie.custom["hello"] %>
