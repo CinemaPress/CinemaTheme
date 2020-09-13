@@ -62,6 +62,7 @@ Options:
   -o, --online [url]      online url
   -d, --download [url]    download url
   -n, --name [name]       name theme
+  -u, --uncss             removes unused CSS
   -V, --version           output the version number
   -h, --help              output usage information
 ```

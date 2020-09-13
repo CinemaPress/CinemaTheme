@@ -109,6 +109,10 @@
 <% if (movie.imdb_vote) { %>
     <%- page.l.rating %>: <%- movie.imdb_rating %> (<%- movie.imdb_vote %> <%- page.l.votes %>)
 <% } %>
+<% /* Список тегов */ %>
+<% if (movie.tags_url) { %>
+    <%- page.l.tags %>: <%- movie.tags_url %>
+<% } %>
 <% /* Вышел на экраны или нет */ %>
 <% if (movie.passed) { %>Премьера состоялась<% } %>
 <% /* Дата премьеры фильма */ %>
