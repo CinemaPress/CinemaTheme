@@ -45,7 +45,7 @@ After generation and editing (recommended use <a href="https://code.visualstudio
 
 ## Help
 ```bash
-~# cinemapress -h
+~# cinematheme -h
 
 Usage: cinematheme <command> [options]
 
